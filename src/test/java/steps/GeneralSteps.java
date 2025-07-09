@@ -1,7 +1,7 @@
 package src.test.java.steps;
 
 
-import cucumber.api.java.ru.И;
+import cucumber.api.java.ru.*;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
