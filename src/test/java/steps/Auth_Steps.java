@@ -1,34 +1,28 @@
-package steps;
+package src.test.java.steps;
 
-import cucumber.api.java.bg.И;
-
+import cucumber.api.java.ru.И;
 import io.qameta.atlas.core.Atlas;
 import io.qameta.atlas.core.context.RetryerContext;
 import io.qameta.atlas.core.internal.DefaultRetryer;
 import io.qameta.atlas.webdriver.WebDriverConfiguration;
 import io.qameta.atlas.webdriver.WebPage;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import utils.AuthReader;
-import utils.Element;
-import utils.TimeCache;
+import src.main.java.utils.AuthReader;
+import src.main.java.utils.Element;
+import src.main.java.utils.SaveCache;
 
 import java.io.IOException;
-import java.util.Collections;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.Collections;
 
-@SpringBootApplication
+
+
 public class Auth_Steps {
     protected WebDriver driver;
     protected Atlas atlas;
     public static Auth_Steps INSTANCE = new Auth_Steps();
-    TimeCache timeCache = new TimeCache(4);
+    SaveCache saveCache = new SaveCache(4);
 
     public Auth_Steps() {
 

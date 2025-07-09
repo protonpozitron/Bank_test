@@ -1,4 +1,4 @@
-package generators;
+package src.main.java.generators;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -26,6 +26,7 @@ public class Gen {
             }
         }
         return alphaNum.toArray().toString();
-        //alphaNum.get((int)(Math.random()*alphaNum.size()));
+
     }
+
 }
